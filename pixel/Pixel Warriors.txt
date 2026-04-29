@@ -1,0 +1,29 @@
+                     	  USING ONLINE RESOURSES & AL TOOLS.
+				Mini Table Tennis Game
+				  Team Pixel Warriors 
+
+
+
+ resourese - chatgpt
+
+ void checkCollision() {
+    if (ball.x <= 20 + leftPaddle.w &&
+        ball.y >= leftPaddle.y &&
+        ball.y <= leftPaddle.y + leftPaddle.h) {
+
+      ball.xspeed *= -1.1;
+      ball.x = 20 + leftPaddle.w;
+      scoreLeft++;
+    }
+
+    if (ball.x >= width - 20 - rightPaddle.w &&
+        ball.y >= rightPaddle.y &&
+        ball.y <= rightPaddle.y + rightPaddle.h) {
+
+      ball.xspeed *= -1.1;
+      ball.x = width - 20 - rightPaddle.w;
+      scoreRight++;
+    }
+  }
+
+
